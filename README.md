@@ -22,7 +22,7 @@ Solver automático para el minijuego de citas de Karuta. Detecta el mapa activo,
 - Identifica el mapa por su hash y consulta rutas previamente calculadas
 - Si el mapa es nuevo, solicita descripción manual para construirlo
 - Calcula la ruta óptima usando Beam Search
-- Ejecuta los movimientos y acciones automáticamente
+- Devuelve la secuencia óptima de movimientos como una cadena de emojis lista para seguir manualmente
 
 ---
 
