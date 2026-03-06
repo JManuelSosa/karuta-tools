@@ -1,0 +1,30 @@
+export enum LocationCategory {
+    REGULAR = "REGULAR", 
+    SPECIAL = "SPECIAL", 
+    OBSTACLE = "OBSTACLE", 
+};
+
+export enum LocationID {
+    
+    // Regulares
+    GAS_STATION = 'GAS_STATION',
+    FLOWER_GARDEN = 'FLOWER_GARDEN',
+    BALLROOM = 'BALLROOM',
+    COFFEEHOUSE = 'COFFEEHOUSE',
+    JUICEBOX = 'JUICEBOX',
+    THEATER = 'THEATER',
+    ITALIAN_RESTAURANT = 'ITALIAN_RESTAURANT',
+    TACO_STAND = 'TACO_STAND',
+    NIGHTCLUB = 'NIGHTCLUB',
+    FAIR = 'FAIR',
+    SANDWICH_SHOP = 'SANDWICH_SHOP',
+
+    // Especiales
+    HOME = 'HOME',
+    AIRPORT = 'AIRPORT',
+    JEWELRY_STORE = 'JEWELRY_STORE',
+    SHOPPING_MALL = 'SHOPPING_MALL',
+    
+    // Obstáculo
+    TREE = 'TREE'
+}
