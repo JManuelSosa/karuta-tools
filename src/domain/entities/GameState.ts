@@ -37,11 +37,11 @@ export class GameState {
     applyMoveCost(): GameState {
 
         const newStats: Stats = {
-            gas: this.stats.gas.subtract(GAME_CONSTANTS.MOVE.GAS),
-            food: this.stats.food.subtract(GAME_CONSTANTS.MOVE.FOOD),
-            drink: this.stats.drink.subtract(GAME_CONSTANTS.MOVE.DRINK),
-            entertainment:this.stats.entertainment.subtract(GAME_CONSTANTS.MOVE.ENTERTAINMENT),
-            time: this.stats.time.subtract(GAME_CONSTANTS.MOVE.TIME)
+            gas: this.stats.gas.subtract(GAME_CONSTANTS.MOVE.gas),
+            food: this.stats.food.subtract(GAME_CONSTANTS.MOVE.food),
+            drink: this.stats.drink.subtract(GAME_CONSTANTS.MOVE.drink),
+            entertainment:this.stats.entertainment.subtract(GAME_CONSTANTS.MOVE.entertainment),
+            time: this.stats.time.subtract(GAME_CONSTANTS.MOVE.time)
         };
 
         const newState = new GameState(newStats,this.position,this.map,this.turnsElapsed + 1);
@@ -53,10 +53,10 @@ export class GameState {
     applyActionCost(): GameState {
         const newStats: Stats = {
             gas:  this.stats.gas,
-            food: this.stats.food.subtract(GAME_CONSTANTS.ACTION.FOOD),
-            drink: this.stats.drink.subtract(GAME_CONSTANTS.ACTION.DRINK),
-            entertainment: this.stats.entertainment.subtract(GAME_CONSTANTS.ACTION.ENTERTAINMENT),
-            time: this.stats.time.subtract(GAME_CONSTANTS.ACTION.TIME)
+            food: this.stats.food.subtract(GAME_CONSTANTS.ACTION.food),
+            drink: this.stats.drink.subtract(GAME_CONSTANTS.ACTION.drink),
+            entertainment: this.stats.entertainment.subtract(GAME_CONSTANTS.ACTION.entertainment),
+            time: this.stats.time.subtract(GAME_CONSTANTS.ACTION.time)
         };
 
         const newState = new GameState(newStats,this.position,this.map,this.turnsElapsed + 1);

@@ -1,15 +1,17 @@
+import { STAT_KEY } from "../types";
+
 export const GAME_CONSTANTS = {
     MOVE: {
-        GAS:10,
-        FOOD:4,
-        DRINK:6,
-        ENTERTAINMENT: 8,
-        TIME:4
+        [STAT_KEY.GAS]:10,
+        [STAT_KEY.FOOD]:4,
+        [STAT_KEY.DRINK]:6,
+        [STAT_KEY.ENTERTAINMENT]: 8,
+        [STAT_KEY.TIME]:4
     },
     ACTION: {
-        FOOD:4,
-        DRINK:6,
-        ENTERTAINMENT: 8,
-        TIME:4
+        [STAT_KEY.FOOD]:4,
+        [STAT_KEY.DRINK]:6,
+        [STAT_KEY.ENTERTAINMENT]: 8,
+        [STAT_KEY.TIME]:4
     }
 } as const;
